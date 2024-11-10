@@ -1,230 +1,245 @@
+/* Reset default margin and padding for all elements */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* Center-aligning content in the main section with flexible alignment for centering */
 section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #e6e7eb;
-    width: 100%;
+    display: flex; /* Flexbox layout for easy centering */
+    justify-content: center; /* Centering content horizontally */
+    align-items: center; /* Centering content vertically */
+    height: 100vh; /* Full viewport height for the section */
+    background-color: #e6e7eb; /* Light gray background color */
+    width: 100%; /* Full-width section */
 }
 
+/* Styling for the main container */
 article {
-    background-color: white;
-    width: 80%;
-    height: 80vh;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    flex-wrap: wrap;
+    background-color: white; /* White background for contrast */
+    width: 80%; /* 80% width of the parent container (section) */
+    height: 80vh; /* 80% height of the viewport */
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between child elements */
+    flex-direction: column; /* Vertical arrangement of children */
+    flex-wrap: wrap; /* Allow content wrapping */
 }
 
-/* Left Container */
+/* Left container taking 50% of the parent width */
 .left-div {
-    width: 50%;
-    height: 100%;
-    display: flex;
-
+    width: 50%; /* Half the parent container's width */
+    height: 100%; /* Full height of the parent container */
+    display: flex; /* Flexbox layout */
 }
 
-/* General inner container */
+/* General container within the left-div */
 .leftDiv-cont {
-    width: 65%;
-    display: flex;
-    gap: 30PX;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0 auto;
+    width: 65%; /* 65% width of its parent */
+    display: flex; /* Flexbox layout for content alignment */
+    gap: 30px; /* Space between elements */
+    justify-content: center; /* Centering children horizontally */
+    flex-direction: column; /* Vertical stacking of child elements */
+    margin: 0 auto; /* Centered alignment using margin auto */
 }
 
-
-/* First mini-cont */
+/* Container for text content */
 .left-texts {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    gap: 10px;
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between elements */
+    flex-direction: column; /* Vertical stacking of child elements */
+    gap: 10px; /* Space between child elements */
 }
 
+/* Styling for heading inside the left-texts container */
 .left-texts h1 {
-    font-size: 200%;
-    font-weight: 550;
-    margin: 0;
+    font-size: 200%; /* Larger font size */
+    font-weight: 550; /* Medium-bold weight */
+    margin: 0; /* No margin */
 }
 
+/* Paragraph text styling in left-texts */
 .left-texts p {
-    color: gray;
-
+    color: gray; /* Gray text color */
 }
 
-/* Second mini-cont */
-
+/* Styling for the Google login button container */
 .google-login {
-    font-size: 1.5rem;
-    width: 100%;
-    color: gray;
-    margin: 0;
-    padding: 8px 0;
-    display: flex;
-    border: 1px solid rgb(212, 210, 210);
-    border-radius: 5px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
+    font-size: 1.5rem; /* Larger font size */
+    width: 100%; /* Full width */
+    color: gray; /* Text color */
+    margin: 0; /* No margin */
+    padding: 8px 0; /* Padding for height */
+    display: flex; /* Flexbox layout for alignment */
+    border: 1px solid rgb(212, 210, 210); /* Border styling */
+    border-radius: 5px; /* Rounded corners */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    gap: 10px; /* Space between elements */
+    cursor: pointer; /* Pointer cursor on hover */
 }
 
+/* Paragraph text inside Google login container */
 .google-login p {
-    margin: 0;
-    font-size: 18px;
-    font-weight: 700;
+    margin: 0; /* No margin */
+    font-size: 18px; /* Text size */
+    font-weight: 700; /* Bold font weight */
 }
 
-/* Third mini-cont  */
-
+/* Styling for separator "or" section */
 .or {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-    gap: 10px;
-    color: gray;
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between child elements */
+    width: 100%; /* Full width */
+    align-items: center; /* Center elements vertically */
+    gap: 10px; /* Space between elements */
+    color: gray; /* Text color */
 }
 
+/* Line styling within the "or" section */
 .or p {
-    border-bottom: 1px solid rgb(223, 218, 218);
-    width: 100%;
-
+    border-bottom: 1px solid rgb(223, 218, 218); /* Bottom border styling */
+    width: 100%; /* Full width */
 }
 
-/* Fourth mini-con */
+/* Form container styling */
 form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Vertical stacking */
+    gap: 20px; /* Space between form elements */
 }
 
+/* Input field container within the form */
 .email-form {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    gap: 8;
-    color: gray;
-
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between elements */
+    flex-direction: column; /* Vertical stacking */
+    gap: 8px; /* Space between elements */
+    color: gray; /* Text color */
 }
 
+/* Input field styling */
 .email-form input {
-    border: none;
-    outline: none;
-    border-bottom: 1px solid rgb(212, 210, 210);
+    border: none; /* No border */
+    outline: none; /* No outline */
+    border-bottom: 1px solid rgb(212, 210, 210); /* Bottom border for input */
 }
 
+/* Container for the "forgot password" and "remember me" section */
 .forgot {
-    display: flex;
-    justify-content: space-between;
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between elements */
 }
 
+/* "Remember me" and "forgot password" link styling */
 .rem-and-forgot {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    color: black;
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center alignment */
+    gap: 5px; /* Space between elements */
+    color: black; /* Text color */
 }
 
+/* Link styling in rem-and-forgot container */
 .rem-and-forgot a {
-    color: black;
-
+    color: black; /* Black text color */
 }
 
+/* Button styling */
 button {
-    width: 100%;
-    padding: 10px 0;
-    background-color: black;
-    color: white;
-    border-radius: 8px;
-    cursor: pointer;
+    width: 100%; /* Full width */
+    padding: 10px 0; /* Padding for button height */
+    background-color: black; /* Black background */
+    color: white; /* White text color */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
 }
 
+/* Styling for sign-up container */
 .signup-cont {
-    text-align: center;
-    color: gray;
+    text-align: center; /* Center-align text */
+    color: gray; /* Text color */
 }
 
+/* Link styling inside sign-up container */
 .signup-cont a {
-    color: black;
-    text-decoration: none;
+    color: black; /* Black text color */
+    text-decoration: none; /* Remove underline */
 }
 
+/* Styling for the right container */
 .right-div {
-    width: 50%;
-    height: 100%;
-    background-image: url(second-pic.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    width: 50%; /* Half the parent container's width */
+    height: 100%; /* Full height of the parent container */
+    background-image: url(second-pic.jpg); /* Background image */
+    background-size: cover; /* Cover the entire container */
+    background-repeat: no-repeat; /* No repeat */
 }
 
+/* General content container for right-div */
 .rightDiv-cont {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 30px;
-    margin: 100px 0;
-    width: 100%;
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center-align content */
+    align-items: center; /* Center-align vertically */
+    flex-direction: column; /* Vertical stacking */
+    gap: 30px; /* Space between elements */
+    margin: 100px 0; /* Margin for spacing */
+    width: 100%; /* Full width */
 }
 
+/* Image styling within right-div */
 #glass-picture {
-    opacity: 0.8;
-    width: 100%;
-    height: 20vh;
+    opacity: 0.8; /* Slight transparency */
+    width: 100%; /* Full width */
+    height: 20vh; /* 20% of the viewport height */
 }
 
+/* Text styling for the right section */
 .rightDiv-text {
-    font-size: 30px;
-    margin: 0 40px;
-    color: white;
-    
-
+    font-size: 30px; /* Large font size */
+    margin: 0 40px; /* Horizontal margin */
+    color: white; /* White text color */
 }
 
+/* Sophie container styling */
 .sophie {
-    display: flex;
-    justify-content: space-between;
-    width: 85%;
-    font-size: 15px;
-    color: white;
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between elements */
+    width: 85%; /* 85% width of the parent */
+    font-size: 15px; /* Text size */
+    color: white; /* White text color */
 }
 
+/* Text styling within the Sophie container */
 .sophie-text {
-    font-size: 20px;
+    font-size: 20px; /* Medium-large font size */
 }
 
+/* Founder container styling */
 .founder {
-    display: flex;
-    justify-content: space-between;
-    width: 85%;
-    font-size: 15px;
-    color: white;
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between elements */
+    width: 85%; /* 85% width of the parent */
+    font-size: 15px; /* Text size */
+    color: white; /* White text color */
 }
 
+/* Additional styling for elements in founder-web */
 .founder-web {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Vertical stacking */
+    gap: 8px; /* Space between elements */
 }
 
+/* Arrow container styling */
 .arrow-cont {
-    display: flex;
-    justify-content: space-between;
-    gap: 5px;
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between elements */
+    gap: 5px; /* Space between elements */
 }
 
+/* Styling for individual arrow elements */
 .arrow {
-    margin: 0 5px;
-    border: 1px solid white;
-    border-radius: 50%;
-    padding: 10px 10px;
+    margin: 0 5px; /* Horizontal margin */
+    border: 1px solid white; /* White border */
+    border-radius: 50%; /* Circular border radius */
+    padding: 10px 10px; /* Padding for size */
 }
